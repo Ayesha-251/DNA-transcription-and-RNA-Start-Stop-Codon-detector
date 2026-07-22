@@ -4,14 +4,16 @@ RNA plays a central role in protein synthesis through the process of translation
 RNA is the bridge that converts the genetic information present in the DNA to functional proteins. 
 The complete set of RNA is the transcriptome of the cell, study of transcriptome(RNA) is highly important due to the fact that transcriptome varies cell to cell.
 The study of RNA helps in understanding gene expression and gene regulation within cells.
-ASSUMPTION:
-The input DNA sequence is treated as the coding strand. Transcription is performed by replacing thymine (T) with uracil (U).
 INPUT: 
   A DNA sequence provided by user. 
 On terminal: 
     Enter the DNA Sequence: 
 OUTPUT: 
-The DNA sequence is transcribed in to RNA sequence by replacing T with U
+If the input sequence contains an invalid nucleotide:
+On terminal:
+    Enter a DNA sequence: ttgcy
+    Invalid DNA sequence
+For the Valid sequence, DNA sequence is transcribed into an RNA sequence by replacing T with U:
 On terminal:
     Enter a DNA sequence: aaggattaacaa
     The transcribed RNA sequence is AAGGAUUAACAA
@@ -42,12 +44,13 @@ No start or stop codon found:
       No start codon found
       No stop codon found
 CODE WORKING: 
-The code takes DNA sequence from the user and make it in Upper case and remove all the white spaces.
-The "T" Thymine present in DNA sequence is then changed to "U" Uracil which converts the sequence from DNA to RNA.
+The code takes DNA sequence from the user and convert it in Uppercase and remove leading and trailing white spaces.
+The DNA sequence is validated to ensure it contains only valid nucleotides (A, T, G, and C). If the sequence contains any nucleotide other than "A", "T", "G", "C". It shows the message of Invalid DNA sequence on terminal and terminate the program.
+If the sequence is valid the "T" Thymine present in DNA sequence is then changed to "U" Uracil which converts the sequence from DNA to RNA.
 The transcribed sequence is printed on the terminal.
 The code checks for the RNA sequence length to determine if proper codons can be formed. 
-If the RNA sequence length is not divisible by 3 warning and does not perform codon determination analysis. 
+If the RNA sequence length is not divisible by 3, the program displays a warning and does not perform codon determination analysis. 
 If formed it checks for the codons from the flag variable and shows the exact location of the start codon and stop codon. 
-If after checking the whole length no stop codon or start codon is present the message regarding the absense of both codons is displayed on the terminal.  
+If no start codon or stop codon is detected after scanning the entire sequence, the program displays a message indicating their absence.
 If the start codon is present the exact position of start codon on the terminal. 
 The terminal shows no stop codon found, no start codon found and terminates the program.
