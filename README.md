@@ -1,4 +1,4 @@
-##DNA to RNA and codon determination:
+#DNA to RNA and codon determination:
 BIOLOGICAL SIGNIFICANCE:
 RNA plays a central role in protein synthesis through the process of translation. The transcription of DNA to form RNA is a major biological aspect in protein formation.
 RNA is the bridge that converts the genetic information present in the DNA to functional proteins. 
