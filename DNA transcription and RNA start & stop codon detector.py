@@ -1,4 +1,3 @@
-
 #DNA to RNA and codon determination:
 DNA= input("Enter a DNA sequence: ").upper().strip()
 RNA=DNA.replace("T", "U")
